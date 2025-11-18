@@ -3,15 +3,12 @@ import Heading from '@/components/atoms/Heading';
 import InteractiveDashboard from '@/components/organisms/InteractiveDashboard';
 
 // 1. IMPORT THE DATA DIRECTLY
-// This is the *exact same* data your API route was serving.
-// No need to fetch it over the network.
+// We get the data from the local file, not from the API
 import { salesData, MonthlySales } from '@/data/mock-sales';
 
-// 2. REMOVE THE getSalesData() FUNCTION
-// We don't need it anymore.
-
-// This can just be a regular component now, not async
+// 2. This page is NO LONGER ASYNC
 export default function DashboardPage() {
+  
   // 3. DEFINE DATA AND ERROR
   let data: MonthlySales[] = [];
   let error: string | null = null;
@@ -25,7 +22,7 @@ export default function DashboardPage() {
       throw new Error('Mock data file is empty or missing.');
     }
   } catch (e: any) {
-    // If something goes wrong (e.g., file not found)
+    // If something goes wrong
     console.error(e);
     error = e.message || 'Could not load data.';
   }
@@ -35,7 +32,6 @@ export default function DashboardPage() {
     <main className="flex min-h-screen flex-col items-center p-12 md:p-24">
       <Heading>Sales Dashboard</Heading>
 
-      {/* Add an error boundary in case fetching fails */}
       {error ? (
         <div className="rounded-md border border-red-400 bg-red-100 p-6 text-red-700 w-full max-w-6xl">
           <h2 className="text-xl font-bold">Error Loading Dashboard</h2>
