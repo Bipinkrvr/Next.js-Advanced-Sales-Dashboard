@@ -1,36 +1,46 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Next.js Sales Dashboard
 
-## Getting Started
+A simple sales dashboard built with Next.js 15, TypeScript, Tailwind CSS, and Recharts. This project follows the Atomic Design methodology for component structure.
 
-First, run the development server:
+## ✨ Key Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+* **Next.js 15 App Router:** Uses Server Components for fast page loads and Client Components for interactivity.
+* **Atomic Design:** Components are organized into `atoms` (reusable UI elements) and `organisms` (complex components) for scalability.
+* **Interactive Chart:** Uses Recharts to display mock sales data for 2022, 2023, and 2024.
+* **TypeScript:** Fully typed codebase.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🛠️ Tech Stack
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+* Next.js 15
+* React 19
+* TypeScript
+* Tailwind CSS
+* Recharts
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🚀 How to Set Up and Run
 
-## Learn More
+1.  **Clone the repository:**
+    ```bash
+    git clone [https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git](https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git)
+    cd YOUR_REPO_NAME
+    ```
 
-To learn more about Next.js, take a look at the following resources:
+2.  **Install dependencies:**
+    ```bash
+    npm install
+    ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+3.  **Run the development server:**
+    ```bash
+    npm run dev
+    ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Open [http://localhost:3000](http://localhost:3000) to see the app and navigate to the dashboard.
 
-## Deploy on Vercel
+## 📈 Future Enhancements
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+As requested, here are the next steps for this project:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+* **Custom Filter Input:** Add an input field to let users set their own sales threshold.
+* **API Integration:** Fetch real data from an API instead of using the local mock file.
+* **Multiple Chart Types:** Add buttons to switch between bar, line, or pie charts.
